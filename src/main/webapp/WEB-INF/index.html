@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Posts</title>
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        #posts-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .post {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .post h3 {
+            color: #007bff;
+            margin-top: 0;
+        }
+
+        .post img {
+            max-width: 100%;
+            display: block;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+
+        #add-post-form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #add-post-form label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        #add-post-form input[type="text"],
+        #add-post-form textarea,
+        #add-post-form input[type="file"] {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        #add-post-form button {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #add-post-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<h1>User Posts</h1>
+
+
+<div id="posts-container">
+
+  <div class="post">
+    <h3>Post Title</h3>
+    <p>Post content goes here...</p>
+    <img src="placeholder.jpg" alt="Post Image">
+  </div>
+</div>
+
+
+<h2>Add New Post</h2>
+<form id="add-post-form" enctype="multipart/form-data">
+  <label for="post-title">Title:</label><br>
+  <input type="text" id="post-title" name="post-title" required><br>
+  <label for="post-content">Content:</label><br>
+  <textarea id="post-content" name="post-content" required></textarea><br>
+  <label for="post-image">Attach Image (jpg):</label><br>
+  <input type="file" id="post-image" name="post-image" accept="image/jpeg" required><br>
+  <button type="submit">Add Post</button>
+  <a href="post.html">View Post</a>
+</form>
+</body>
+</html>
+

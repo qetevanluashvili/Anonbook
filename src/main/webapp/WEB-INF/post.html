@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Post</title>
+    <style>
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.post {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.post h2 {
+    color: #333;
+}
+
+.post p {
+    color: #555;
+}
+
+.post img {
+    max-width: 100%;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.comments {
+    margin-bottom: 20px;
+}
+
+.comments h3 {
+    color: #333;
+}
+
+#comments-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#comments-list li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+#comments-list li:last-child {
+    border-bottom: none;
+}
+
+.timestamp {
+    color: #777;
+    font-size: 0.9em;
+}
+
+#add-comment-form {
+    margin-top: 20px;
+}
+
+#add-comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+#add-comment-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-comment-form button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="post">
+        <h2>Post Title</h2>
+        <p>Post content goes here...</p>
+
+    </div>
+
+
+    <div class="comments">
+        <h3>Comments</h3>
+        <ul id="comments-list">
+
+            <li>
+                <p>Comment content goes here...</p>
+                <span class="timestamp">Posted on: January 1, 2023</span>
+            </li>
+        </ul>
+    </div>
+
+
+    <form id="add-comment-form">
+        <h3>Add a Comment</h3>
+        <textarea id="comment" name="comment" required></textarea>
+        <button type="submit">Add Comment</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
